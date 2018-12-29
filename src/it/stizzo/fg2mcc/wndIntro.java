@@ -31,7 +31,7 @@ public class wndIntro extends JFrame {
 	public static JFrame frmPreferenze;
 	public static JFrame frmCaricamento;
 	
-	public static boolean gestioneNomeSuMCC = true;
+	public static boolean gestioneNomeSuMCC = false;
 	
 	private static int altezzaControlli = 28;
 	private static String carattere = "Arial";
