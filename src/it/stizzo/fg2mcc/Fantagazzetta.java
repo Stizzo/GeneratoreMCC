@@ -87,10 +87,10 @@ public class Fantagazzetta {
 							}
 							if (cellIterator.hasNext()){
 								//System.out.print("|"+cell.toString());}
-								writer.print(cell.toString().trim()+"|");}
+								writer.print(cell.toString()+"|");}
 								else {
 									//System.out.println("|"+cell.toString());}
-									writer.println(cell.toString().trim());}
+									writer.println(cell.toString());}
 							break;
 						case Cell.CELL_TYPE_NUMERIC:
 							//Arrotondo per 0.5 sia in eccesso che per difetto
@@ -169,7 +169,7 @@ public class Fantagazzetta {
 		CalciatoreRaw a = new CalciatoreRaw(
 				Operazioni.verificaID(arraySplittate[0],arraySplittate[2].trim()), //ID
 				Operazioni.verificaRuolo(arraySplittate[1],arraySplittate[2].trim()), //ruolo
-				arraySplittate[2].trim(), //cognome
+				arraySplittate[2], //cognome
 				arraySplittate[3], //voto
 				Integer.parseInt(arraySplittate[4]), //golSeg
 				Integer.parseInt(arraySplittate[5]), //golSub
@@ -227,7 +227,7 @@ public class Fantagazzetta {
 					line = line.replaceAll("</td></tr>","");
 					line = line.replaceAll("</table>", "");
 					line = line.replaceAll(",",".");
-				//	System.out.println(line.toString()); Restituisce la lista, può tornare utile per estrapolare il file Quotazioni.txt con un writer
+				//	System.out.println(line.toString()); Restituisce la lista, puï¿½ tornare utile per estrapolare il file Quotazioni.txt con un writer
 					writer.println(line.toString());
 				}
 			}
@@ -268,7 +268,7 @@ public class Fantagazzetta {
 			Quotazione a = new Quotazione(
 					Integer.parseInt(arraySplittate[0]), //id
 							arraySplittate[1],  //ruolo
-							arraySplittate[2].trim(),  //cognome
+							arraySplittate[2],  //cognome
 							arraySplittate[3],  //squadra
 							Double.parseDouble(arraySplittate[4]),	//costo
 							Double.parseDouble(arraySplittate[5]),	//costoIniziale

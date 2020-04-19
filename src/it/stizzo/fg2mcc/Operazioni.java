@@ -24,7 +24,7 @@ import javax.swing.text.BadLocationException;
 
 public class Operazioni {
 	public static String version = "2.2.13";
-	public static boolean beta_versione = false;	//disabilità il controllo versione
+	public static boolean beta_versione = false;	//disabilitï¿½ il controllo versione
 	public static ArrayList<Calciatore> ca;
 	public static ArrayList<CalciatoreRaw> cr;
 	public static int giornata;
@@ -94,7 +94,7 @@ public static ArrayList<Calciatore> formatoMCC(ArrayList<Calciatore> a, ArrayLis
 								cognomeSenzaNome = cognomeSenzaNome + " " + cognome[z];
 								}
 						}
-						cognomeSenzaNome = cognomeSenzaNome.trim();
+						cognomeSenzaNome = cognomeSenzaNome;
 						if (b.get(i).getCognome().equals(cognomeSenzaNome)){
 							a.get(j).setGiornata(Operazioni.giornata);
 							if (b.get(i).getVotoNum()!=0){	
@@ -187,7 +187,7 @@ public static ArrayList<Quotazione> fuoriMCCdaQuotazioni(ArrayList<Calciatore> a
 						cognomeSenzaNome = cognomeSenzaNome + " " + cognome[z];
 						}
 				}
-				cognomeSenzaNome = cognomeSenzaNome.trim();
+				//cognomeSenzaNome = cognomeSenzaNome.trim();
 				
 				if (c.get(i).getCognome().equals(cognomeSenzaNome)){
 					trovato = true;
@@ -231,7 +231,7 @@ public static ArrayList<CalciatoreRaw> fuoriMCCdaCalciatoriRaw(ArrayList<Calciat
 						cognomeSenzaNome = cognomeSenzaNome + " " + cognome[z];
 						}
 				}
-				cognomeSenzaNome = cognomeSenzaNome.trim();
+				//cognomeSenzaNome = cognomeSenzaNome.trim();
 				
 				if (c.get(i).getCognome().equals(cognomeSenzaNome)){
 					trovato = true;
@@ -279,7 +279,7 @@ public static ArrayList<Calciatore> inserisciQuotazioni(ArrayList<Calciatore> a,
 					
 					}
 				}
-				cognomeSenzaNome = cognomeSenzaNome.trim();
+				//cognomeSenzaNome = cognomeSenzaNome.trim();
 				
 					//System.out.println(c.get(i).getCognome() +" - " + cognomeSenzaNome);
 				if (c.get(i).getCognome().equals(cognomeSenzaNome)){
@@ -377,7 +377,7 @@ public static ArrayList<Calciatore> leggiCalciatoriMCC(String path, int online) 
 			Calciatore a = new Calciatore(
 					Integer.parseInt(arraySplittate[0]), 					//id
 					Integer.parseInt(arraySplittate[1]), 					 //giornata
-									arraySplittate[2].replaceAll("\"", "").trim(),  //cognome
+									arraySplittate[2].replaceAll("\"", ""),  //cognome
 									arraySplittate[3],  					//squadra
 					Integer.parseInt(arraySplittate[4]),  					//trasferito
 					Integer.parseInt(arraySplittate[5]),  					//ruolo
@@ -632,7 +632,7 @@ public static void controllaAggiornamenti(){
 		if (line.equals("EndOfSupport")){
 			System.exit(0);
 		}else if (!line.equals(Operazioni.version)){
-			JOptionPane.showMessageDialog(null, "E' disponibile una versione più aggiornata."+"\n"+"Controlla il forum per ulteriori dettagli."+"\n\n"+"Versione attuale: "+Operazioni.version+"\n"+"Ultima versione disponibile: "+line);
+			JOptionPane.showMessageDialog(null, "E' disponibile una versione piï¿½ aggiornata."+"\n"+"Controlla il forum per ulteriori dettagli."+"\n\n"+"Versione attuale: "+Operazioni.version+"\n"+"Ultima versione disponibile: "+line);
 			scanner.close();
 		}
 	} catch (IOException e) {
@@ -650,11 +650,11 @@ try{
 		ID = ID_temp;
 		ID_temp--;
 		try {
-			wndCaricamento.getDoc().insertString(wndCaricamento.getDoc().getLength(), "\n"+"- Rilevato il seguente calciatore senza ID nel file dei voti: "+calciatore+";"+"\n"+"Verrà utilizzato temporaneamente l'ID "+ID+" in fase di elaborazione.", wndCaricamento.getGiallo());
+			wndCaricamento.getDoc().insertString(wndCaricamento.getDoc().getLength(), "\n"+"- Rilevato il seguente calciatore senza ID nel file dei voti: "+calciatore+";"+"\n"+"Verrï¿½ utilizzato temporaneamente l'ID "+ID+" in fase di elaborazione.", wndCaricamento.getGiallo());
 		} catch (BadLocationException e1) {
 			e1.printStackTrace();
 		}
-	//JOptionPane.showMessageDialog(null, "Rilevato il seguente calciatore senza ID nel file dei voti: "+calciatore+";"+"\n"+"Verrà utilizzato temporaneamente l'ID "+ID+" in fase di elaborazione.");
+	//JOptionPane.showMessageDialog(null, "Rilevato il seguente calciatore senza ID nel file dei voti: "+calciatore+";"+"\n"+"Verrï¿½ utilizzato temporaneamente l'ID "+ID+" in fase di elaborazione.");
 	}
 return ID;
 }
@@ -662,7 +662,7 @@ return ID;
 public static String verificaRuolo(String presuntoRuolo, String calciatore){
 	String ruolo = presuntoRuolo;
 	if (presuntoRuolo == ""){
-		JOptionPane.showMessageDialog(null, "Errore nel rilevamento del ruolo del calciatore "+calciatore+";"+"\n"+"Verrà utilizzato temporaneamente il ruolo 'Z'");
+		JOptionPane.showMessageDialog(null, "Errore nel rilevamento del ruolo del calciatore "+calciatore+";"+"\n"+"Verrï¿½ utilizzato temporaneamente il ruolo 'Z'");
 	ruolo = "Z";
 	}
 return ruolo;

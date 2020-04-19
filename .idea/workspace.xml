@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc7f9032-d1d6-47e4-a600-287d070584e0" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RE2GpqLJ2X2dTObFWpDxMU965O" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Commander-Kraken" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="wndIntro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.stizzo.fg2mcc.wndIntro" />
+      <module name="FG2MCC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.stizzo.fg2mcc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.wndIntro" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc7f9032-d1d6-47e4-a600-287d070584e0" name="Default Changelist" comment="" />
+      <created>1569217841650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569217841650</updated>
+      <workItem from="1569217850397" duration="736000" />
+      <workItem from="1569271001477" duration="2471000" />
+      <workItem from="1569835584251" duration="341000" />
+      <workItem from="1569910765186" duration="235000" />
+      <workItem from="1569913855030" duration="1249000" />
+      <workItem from="1570046831724" duration="636000" />
+      <workItem from="1570428256416" duration="336000" />
+      <workItem from="1571699927619" duration="4831000" />
+      <workItem from="1572561594742" duration="2655000" />
+      <workItem from="1573453222375" duration="1328000" />
+      <workItem from="1573930452910" duration="1512000" />
+      <workItem from="1574753996770" duration="655000" />
+      <workItem from="1575328598651" duration="1218000" />
+      <workItem from="1575842979334" duration="1612000" />
+      <workItem from="1576535552476" duration="7045000" />
+      <workItem from="1577055599752" duration="1204000" />
+      <workItem from="1577094243472" duration="741000" />
+      <workItem from="1577539508219" duration="1745000" />
+      <workItem from="1578350758507" duration="1008000" />
+      <workItem from="1578956642259" duration="1612000" />
+      <workItem from="1579202210051" duration="14000" />
+      <workItem from="1579563434177" duration="624000" />
+      <workItem from="1579632866991" duration="687000" />
+      <workItem from="1580077523120" duration="2156000" />
+      <workItem from="1580558328713" duration="2445000" />
+      <workItem from="1580682739738" duration="1279000" />
+      <workItem from="1580767495356" duration="212000" />
+      <workItem from="1580799885527" duration="4710000" />
+      <workItem from="1581317793516" duration="1318000" />
+      <workItem from="1581724161856" duration="532000" />
+      <workItem from="1582577702071" duration="600000" />
+      <workItem from="1583137458040" duration="1414000" />
+      <workItem from="1585852316663" duration="1191000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
